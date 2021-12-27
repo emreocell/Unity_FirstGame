@@ -11,7 +11,7 @@ public class isTrigger : MonoBehaviour
         if(collider.gameObject.tag == "Player")
         {
             player.transform.localScale += nScale;
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
